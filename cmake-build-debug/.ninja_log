@@ -1,0 +1,8 @@
+# ninja log v5
+0	457	1661462155668212753	CMakeFiles/untitled.dir/source/main.cpp.o	562ef6376a74f465
+0	653	1661460161851092445	CMakeFiles/untitled.dir/main.cpp.o	1ecdcb49529f5405
+1	333	1661462155544880222	CMakeFiles/untitled.dir/source/Editor.cpp.o	2a72c34dbcab0383
+1	574	1661462010632489669	CMakeFiles/untitled.dir/source/Window.cpp.o	b06585e6f723977e
+0	24	1661500675391722558	build.ninja	272acb97345d3a71
+12	880	1661461909896478369	CMakeFiles/untitled.dir/source/glad.c.o	510dbc6cacacaee2
+458	575	1661462155784878660	untitled	359b378949ebae53
