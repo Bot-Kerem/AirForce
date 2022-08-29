@@ -8,6 +8,7 @@
 
 #include <imgui.h>
 #include "Renderer/VertexBuffer.h"
+#include <GLFW/glfw3.h>
 
 namespace AirForce {
     void Editor::init() {
@@ -20,7 +21,10 @@ namespace AirForce {
         build();
         while(!AF_Window.isClosed()){
             Window::pollEvents();
-            AF_Renderer.clear();
+            deltaTime = glfwGetTime() - lastTime;
+            lastTime =  glfwGetTime();
+
+            //AF_Renderer.clear();
             draw();
             AF_Window.swapBuffers();
         }
@@ -33,7 +37,12 @@ namespace AirForce {
         AF_Renderer.clear();
 
 
+        glm::mat4 view = scene.camera.getViewMatrix();
+        glm::mat4 perspective = scene.getPerspective();
         shader.use();
+        shader.setMat4("view", &perspective);
+        shader.setMat4("proj", &view);
+
         vao.bind();
         glDrawArrays(GL_TRIANGLES, 0, 3);
 
@@ -44,6 +53,7 @@ namespace AirForce {
     }
 
     void Editor::build() {
+        AF_Window.setUserPointer(this);
         Renderer::clearColor(0.25f, 0.25f, 0.25f, 1.0f);
         GUI::init(AF_Window.getWindow());
         Font::init();

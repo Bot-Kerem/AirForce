@@ -13,8 +13,8 @@ namespace AirForce {
 
         ImGui::Begin("Render Scene");
 
-        ImVec2 wSize = ImGui::GetWindowSize();
         ImGui::BeginChild("Render Frame");
+
         const ImVec2 contentSize = ImGui::GetWindowSize();
         if(contentSize.x != m_RenderSize.x || contentSize.y != contentSize.y){
             m_RenderSize = contentSize;
@@ -23,6 +23,8 @@ namespace AirForce {
             Font::updateFramebuffer(m_RenderSize.x, m_RenderSize.y);
         }
         ImGui::Image((ImTextureID)(m_Frame->getRenderImage()), contentSize, ImVec2(0, 1), ImVec2(1, 0));
+
+        m_Focus = ImGui::IsWindowFocused();
         ImGui::EndChild();
 
         ImGui::End();
@@ -38,5 +40,13 @@ namespace AirForce {
 
     void RenderScene::end() {
         m_Frame->end();
+    }
+
+    bool RenderScene::isFocused() {
+        return m_Focus;
+    }
+
+    glm::mat4 RenderScene::getPerspective() {
+        return glm::perspective(glm::radians(camera.Zoom), m_RenderSize.x / m_RenderSize.y, 0.1f, 100.0f);
     }
 } // AirForce

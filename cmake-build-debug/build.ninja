@@ -49,40 +49,159 @@ cmake_ninja_workdir = /home/kereem/CLionProjects/untitled/cmake-build-debug/
 
 build cmake_object_order_depends_target_untitled: phony || CMakeFiles/untitled.dir
 
+build CMakeFiles/untitled.dir/external/glad/source/glad.c.o: C_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/external/glad/source/glad.c || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles/untitled.dir/external/glad/source/glad.c.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  OBJECT_DIR = CMakeFiles/untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles/untitled.dir/external/glad/source
+
 build CMakeFiles/untitled.dir/source/main.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/source/main.cpp || cmake_object_order_depends_target_untitled
   DEP_FILE = CMakeFiles/untitled.dir/source/main.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/kereem/CLionProjects/untitled/include
-  OBJECT_DIR = CMakeFiles/untitled.dir
-  OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source
-
-build CMakeFiles/untitled.dir/source/glad.c.o: C_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/source/glad.c || cmake_object_order_depends_target_untitled
-  DEP_FILE = CMakeFiles/untitled.dir/source/glad.c.o.d
-  FLAGS = -g
-  INCLUDES = -I/home/kereem/CLionProjects/untitled/include
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source
 
 build CMakeFiles/untitled.dir/source/Window.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/source/Window.cpp || cmake_object_order_depends_target_untitled
   DEP_FILE = CMakeFiles/untitled.dir/source/Window.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/kereem/CLionProjects/untitled/include
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source
 
 build CMakeFiles/untitled.dir/source/Editor.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/source/Editor.cpp || cmake_object_order_depends_target_untitled
   DEP_FILE = CMakeFiles/untitled.dir/source/Editor.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/kereem/CLionProjects/untitled/include
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source
 
 build CMakeFiles/untitled.dir/source/Renderer/Renderer.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/source/Renderer/Renderer.cpp || cmake_object_order_depends_target_untitled
   DEP_FILE = CMakeFiles/untitled.dir/source/Renderer/Renderer.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/kereem/CLionProjects/untitled/include
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source/Renderer
+
+build CMakeFiles/untitled.dir/source/GUI/Gui.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/source/GUI/Gui.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles/untitled.dir/source/GUI/Gui.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  OBJECT_DIR = CMakeFiles/untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source/GUI
+
+build CMakeFiles/untitled.dir/source/GUI/Text.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/source/GUI/Text.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles/untitled.dir/source/GUI/Text.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  OBJECT_DIR = CMakeFiles/untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source/GUI
+
+build CMakeFiles/untitled.dir/source/File.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/source/File.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles/untitled.dir/source/File.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  OBJECT_DIR = CMakeFiles/untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source
+
+build CMakeFiles/untitled.dir/source/Renderer/Shader.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/source/Renderer/Shader.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles/untitled.dir/source/Renderer/Shader.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  OBJECT_DIR = CMakeFiles/untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source/Renderer
+
+build CMakeFiles/untitled.dir/source/Renderer/Framebuffer.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/source/Renderer/Framebuffer.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles/untitled.dir/source/Renderer/Framebuffer.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  OBJECT_DIR = CMakeFiles/untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source/Renderer
+
+build CMakeFiles/untitled.dir/source/RenderScene.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/source/RenderScene.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles/untitled.dir/source/RenderScene.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  OBJECT_DIR = CMakeFiles/untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source
+
+build CMakeFiles/untitled.dir/source/Renderer/Mesh.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/source/Renderer/Mesh.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles/untitled.dir/source/Renderer/Mesh.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  OBJECT_DIR = CMakeFiles/untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source/Renderer
+
+build CMakeFiles/untitled.dir/source/Renderer/VertexArray.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/source/Renderer/VertexArray.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles/untitled.dir/source/Renderer/VertexArray.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  OBJECT_DIR = CMakeFiles/untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source/Renderer
+
+build CMakeFiles/untitled.dir/source/Renderer/VertexBuffer.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/source/Renderer/VertexBuffer.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles/untitled.dir/source/Renderer/VertexBuffer.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  OBJECT_DIR = CMakeFiles/untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source/Renderer
+
+build CMakeFiles/untitled.dir/source/Utils/Camera.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/source/Utils/Camera.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles/untitled.dir/source/Utils/Camera.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  OBJECT_DIR = CMakeFiles/untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source/Utils
+
+build CMakeFiles/untitled.dir/external/imgui/source/imgui.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/external/imgui/source/imgui.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles/untitled.dir/external/imgui/source/imgui.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  OBJECT_DIR = CMakeFiles/untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles/untitled.dir/external/imgui/source
+
+build CMakeFiles/untitled.dir/external/imgui/source/imgui_demo.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/external/imgui/source/imgui_demo.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles/untitled.dir/external/imgui/source/imgui_demo.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  OBJECT_DIR = CMakeFiles/untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles/untitled.dir/external/imgui/source
+
+build CMakeFiles/untitled.dir/external/imgui/source/imgui_draw.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/external/imgui/source/imgui_draw.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles/untitled.dir/external/imgui/source/imgui_draw.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  OBJECT_DIR = CMakeFiles/untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles/untitled.dir/external/imgui/source
+
+build CMakeFiles/untitled.dir/external/imgui/source/imgui_impl_glfw.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/external/imgui/source/imgui_impl_glfw.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles/untitled.dir/external/imgui/source/imgui_impl_glfw.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  OBJECT_DIR = CMakeFiles/untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles/untitled.dir/external/imgui/source
+
+build CMakeFiles/untitled.dir/external/imgui/source/imgui_impl_opengl3.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/external/imgui/source/imgui_impl_opengl3.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles/untitled.dir/external/imgui/source/imgui_impl_opengl3.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  OBJECT_DIR = CMakeFiles/untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles/untitled.dir/external/imgui/source
+
+build CMakeFiles/untitled.dir/external/imgui/source/imgui_tables.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/external/imgui/source/imgui_tables.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles/untitled.dir/external/imgui/source/imgui_tables.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  OBJECT_DIR = CMakeFiles/untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles/untitled.dir/external/imgui/source
+
+build CMakeFiles/untitled.dir/external/imgui/source/imgui_widgets.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/external/imgui/source/imgui_widgets.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles/untitled.dir/external/imgui/source/imgui_widgets.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  OBJECT_DIR = CMakeFiles/untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles/untitled.dir/external/imgui/source
 
 
 # =============================================================================
@@ -92,9 +211,9 @@ build CMakeFiles/untitled.dir/source/Renderer/Renderer.cpp.o: CXX_COMPILER__unti
 #############################################
 # Link the executable untitled
 
-build untitled: CXX_EXECUTABLE_LINKER__untitled_Debug CMakeFiles/untitled.dir/source/main.cpp.o CMakeFiles/untitled.dir/source/glad.c.o CMakeFiles/untitled.dir/source/Window.cpp.o CMakeFiles/untitled.dir/source/Editor.cpp.o CMakeFiles/untitled.dir/source/Renderer/Renderer.cpp.o | /usr/lib/libglfw.so.3.3
+build untitled: CXX_EXECUTABLE_LINKER__untitled_Debug CMakeFiles/untitled.dir/external/glad/source/glad.c.o CMakeFiles/untitled.dir/source/main.cpp.o CMakeFiles/untitled.dir/source/Window.cpp.o CMakeFiles/untitled.dir/source/Editor.cpp.o CMakeFiles/untitled.dir/source/Renderer/Renderer.cpp.o CMakeFiles/untitled.dir/source/GUI/Gui.cpp.o CMakeFiles/untitled.dir/source/GUI/Text.cpp.o CMakeFiles/untitled.dir/source/File.cpp.o CMakeFiles/untitled.dir/source/Renderer/Shader.cpp.o CMakeFiles/untitled.dir/source/Renderer/Framebuffer.cpp.o CMakeFiles/untitled.dir/source/RenderScene.cpp.o CMakeFiles/untitled.dir/source/Renderer/Mesh.cpp.o CMakeFiles/untitled.dir/source/Renderer/VertexArray.cpp.o CMakeFiles/untitled.dir/source/Renderer/VertexBuffer.cpp.o CMakeFiles/untitled.dir/source/Utils/Camera.cpp.o CMakeFiles/untitled.dir/external/imgui/source/imgui.cpp.o CMakeFiles/untitled.dir/external/imgui/source/imgui_demo.cpp.o CMakeFiles/untitled.dir/external/imgui/source/imgui_draw.cpp.o CMakeFiles/untitled.dir/external/imgui/source/imgui_impl_glfw.cpp.o CMakeFiles/untitled.dir/external/imgui/source/imgui_impl_opengl3.cpp.o CMakeFiles/untitled.dir/external/imgui/source/imgui_tables.cpp.o CMakeFiles/untitled.dir/external/imgui/source/imgui_widgets.cpp.o | /usr/lib/libglfw.so.3.3
   FLAGS = -g
-  LINK_LIBRARIES = /usr/lib/libglfw.so.3.3
+  LINK_LIBRARIES = /usr/lib/libglfw.so.3.3  -lfreetype
   OBJECT_DIR = CMakeFiles/untitled.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -106,7 +225,7 @@ build untitled: CXX_EXECUTABLE_LINKER__untitled_Debug CMakeFiles/untitled.dir/so
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/kereem/CLionProjects/untitled/cmake-build-debug && /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/bin/ccmake -S/home/kereem/CLionProjects/untitled -B/home/kereem/CLionProjects/untitled/cmake-build-debug
+  COMMAND = cd /home/kereem/CLionProjects/untitled/cmake-build-debug && /home/kereem/clion/bin/cmake/linux/bin/ccmake -S/home/kereem/CLionProjects/untitled -B/home/kereem/CLionProjects/untitled/cmake-build-debug
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -118,7 +237,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/kereem/CLionProjects/untitled/cmake-build-debug && /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/kereem/CLionProjects/untitled -B/home/kereem/CLionProjects/untitled/cmake-build-debug
+  COMMAND = cd /home/kereem/CLionProjects/untitled/cmake-build-debug && /home/kereem/clion/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/kereem/CLionProjects/untitled -B/home/kereem/CLionProjects/untitled/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -145,14 +264,14 @@ build all: phony untitled
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCInformation.cmake /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-C.cmake /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU.cmake /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-C.cmake /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-CXX.cmake /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU.cmake /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux.cmake /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Platform/UnixPaths.cmake /usr/lib64/cmake/glfw3/glfw3Config.cmake /usr/lib64/cmake/glfw3/glfw3ConfigVersion.cmake /usr/lib64/cmake/glfw3/glfw3Targets-noconfig.cmake /usr/lib64/cmake/glfw3/glfw3Targets.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /home/kereem/clion/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCInformation.cmake /home/kereem/clion/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /home/kereem/clion/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /home/kereem/clion/bin/cmake/linux/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /home/kereem/clion/bin/cmake/linux/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /home/kereem/clion/bin/cmake/linux/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /home/kereem/clion/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /home/kereem/clion/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /home/kereem/clion/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/kereem/clion/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-C.cmake /home/kereem/clion/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake /home/kereem/clion/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU.cmake /home/kereem/clion/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-C.cmake /home/kereem/clion/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-CXX.cmake /home/kereem/clion/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU.cmake /home/kereem/clion/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux.cmake /home/kereem/clion/bin/cmake/linux/share/cmake-3.23/Modules/Platform/UnixPaths.cmake /usr/lib64/cmake/glfw3/glfw3Config.cmake /usr/lib64/cmake/glfw3/glfw3ConfigVersion.cmake /usr/lib64/cmake/glfw3/glfw3Targets-noconfig.cmake /usr/lib64/cmake/glfw3/glfw3Targets.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCInformation.cmake /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-C.cmake /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU.cmake /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-C.cmake /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-CXX.cmake /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU.cmake /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux.cmake /home/kereem/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Platform/UnixPaths.cmake /usr/lib64/cmake/glfw3/glfw3Config.cmake /usr/lib64/cmake/glfw3/glfw3ConfigVersion.cmake /usr/lib64/cmake/glfw3/glfw3Targets-noconfig.cmake /usr/lib64/cmake/glfw3/glfw3Targets.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+build ../CMakeLists.txt /home/kereem/clion/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCInformation.cmake /home/kereem/clion/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /home/kereem/clion/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /home/kereem/clion/bin/cmake/linux/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /home/kereem/clion/bin/cmake/linux/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /home/kereem/clion/bin/cmake/linux/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /home/kereem/clion/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /home/kereem/clion/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /home/kereem/clion/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/kereem/clion/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-C.cmake /home/kereem/clion/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake /home/kereem/clion/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU.cmake /home/kereem/clion/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-C.cmake /home/kereem/clion/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-CXX.cmake /home/kereem/clion/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU.cmake /home/kereem/clion/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux.cmake /home/kereem/clion/bin/cmake/linux/share/cmake-3.23/Modules/Platform/UnixPaths.cmake /usr/lib64/cmake/glfw3/glfw3Config.cmake /usr/lib64/cmake/glfw3/glfw3ConfigVersion.cmake /usr/lib64/cmake/glfw3/glfw3Targets-noconfig.cmake /usr/lib64/cmake/glfw3/glfw3Targets.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
 
 
 #############################################

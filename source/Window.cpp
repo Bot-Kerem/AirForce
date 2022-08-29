@@ -2,10 +2,10 @@
 // Created by kereem on 8/25/22.
 //
 
+#include "Editor.h"
 #include "Window.h"
 #include <GLFW/glfw3.h>
 #include <stdexcept>
-#include "Renderer/Renderer.h"
 
 namespace AirForce {
     Window::Window(int width, int height, std::string title){
@@ -13,7 +13,7 @@ namespace AirForce {
         glfwMakeContextCurrent(m_Window);
 
         //glfwSetFramebufferSizeCallback(m_Window, framebufferSizeCallback);
-        //glfwSetWindowUserPointer(window, this);
+        glfwSetKeyCallback(m_Window, keyCallback);
     }
 
     void Window::init(){
@@ -40,5 +40,31 @@ namespace AirForce {
 
     void Window::framebufferSizeCallback(GLFWwindow *window, int width, int height) {
         //Renderer::setViewportSize(width, height);
+    }
+
+    void Window::keyCallback(GLFWwindow* window, int key, int scancode, int action, int mods) {
+        if(action){
+            Editor* editor = static_cast<Editor*>(glfwGetWindowUserPointer(window));
+            if(editor->scene.isFocused()) {
+                switch (key) {
+                    case GLFW_KEY_W:
+                        editor->scene.camera.processKeyboard(Camera::FORWARD, editor->deltaTime);
+                        break;
+                    case GLFW_KEY_S:
+                        editor->scene.camera.processKeyboard(Camera::BACKWARD, editor->deltaTime);
+                        break;
+                    case GLFW_KEY_A:
+                        editor->scene.camera.processKeyboard(Camera::LEFT, editor->deltaTime);
+                        break;
+                    case GLFW_KEY_D:
+                        editor->scene.camera.processKeyboard(Camera::RIGHT, editor->deltaTime);
+                        break;
+                }
+            }
+        }
+    }
+
+    void Window::setUserPointer(void * object) {
+        glfwSetWindowUserPointer(m_Window, object);
     }
 } // AirForce

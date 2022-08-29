@@ -1,4 +1,4 @@
-//
+//editor->scene.camera.processKeyboard();
 // Created by kereem on 8/28/22.
 //
 
@@ -8,6 +8,7 @@
 #include <memory>
 #include "Renderer/Framebuffer.h"
 #include <imgui.h>
+#include "Utils/Camera.h"
 
 namespace AirForce {
     class RenderScene {
@@ -18,7 +19,13 @@ namespace AirForce {
             void start();
             void end();
 
+            bool isFocused();
+
+            glm::mat4 getPerspective();
+            Camera camera{};
         private:
+
+            bool m_Focus = false;
             ImVec2 m_RenderSize{0.0f, 0.0f};
             std::unique_ptr<Framebuffer> m_Frame;
     };

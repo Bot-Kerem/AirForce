@@ -35,16 +35,18 @@ namespace AirForce {
             void dockSpace();
 
             void draw();
+
+            RenderScene scene{};
+            float deltaTime{0};
+            float lastTime{0};
         private:
             Window AF_Window{WIDTH, HEIGHT, "AirForce"};
             Renderer AF_Renderer{};
             Font font{};
-            RenderScene scene;
 
             VertexArray vao;
             Shader shader{"./../shaders/cubemap.vs", "./../shaders/cubemap.fs"};
     };
-
 } // AirForce
 
 #endif // AF_APP_H
