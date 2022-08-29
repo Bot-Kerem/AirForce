@@ -6,19 +6,43 @@
 #define AF_APP_H
 
 #include "Window.h"
+#include "Renderer/Renderer.h"
+#include "Renderer/Framebuffer.h"
+#include "GUI/Text.h"
+#include <glm/vec2.hpp>
+#include "RenderScene.h"
+#include <memory>
+
+#include "Renderer/VertexArray.h"
+#include "Renderer/Shader.h"
 
 namespace AirForce {
-
     class Editor {
         public:
-            const int HEIGHT = 600;
-            const int WIDTH = 800;
+
+            const glm::vec2 renderSize{1920.0f, 1080.0f};
+            int WIDTH = 800;
+            int HEIGHT = 600;
+
+
             Editor();
 
-                void run();
+            void run();
+            void build();
             static void init();
+
+            void drawGUI();
+            void dockSpace();
+
+            void draw();
         private:
             Window AF_Window{WIDTH, HEIGHT, "AirForce"};
+            Renderer AF_Renderer{};
+            Font font{};
+            RenderScene scene;
+
+            VertexArray vao;
+            Shader shader{"./../shaders/cubemap.vs", "./../shaders/cubemap.fs"};
     };
 
 } // AirForce
