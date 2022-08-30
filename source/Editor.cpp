@@ -8,7 +8,7 @@
 
 #include <imgui.h>
 #include "Renderer/VertexBuffer.h"
-#include <GLFW/glfw3.h>
+#include "Utils/Clock.h"
 
 namespace AirForce {
     void Editor::init() {
@@ -21,9 +21,8 @@ namespace AirForce {
         build();
         while(!AF_Window.isClosed()){
             Window::pollEvents();
-            deltaTime = glfwGetTime() - lastTime;
-            lastTime =  glfwGetTime();
-
+            Clock::clock();
+            Controller::PollKeys();
             //AF_Renderer.clear();
             draw();
             AF_Window.swapBuffers();
@@ -36,37 +35,43 @@ namespace AirForce {
         scene.start();
         AF_Renderer.clear();
 
-
         glm::mat4 view = scene.camera.getViewMatrix();
         glm::mat4 perspective = scene.getPerspective();
-        shader.use();
-        shader.setMat4("view", &perspective);
-        shader.setMat4("proj", &view);
 
+        AF_Grid.draw();
+
+        shader.use();
+        shader.setMat4("view", &view);
+        shader.setMat4("proj", &perspective);
         vao.bind();
         glDrawArrays(GL_TRIANGLES, 0, 3);
+        AF_SkyBox.draw();
 
         Font::start();
         font.RenderText("BIG DICK MOTHER FUCKER!", 25.0f, 25.0f, 1.0f, glm::vec3(0.5, 0.8f, 0.2f));
         Font::end();
+
         scene.end();
     }
 
     void Editor::build() {
-        AF_Window.setUserPointer(this);
+        AF_Window.setUserPointer(&scene);
         Renderer::clearColor(0.25f, 0.25f, 0.25f, 1.0f);
         GUI::init(AF_Window.getWindow());
         Font::init();
         Font::startLoading();
         font.load("/usr/share/fonts/adobe-source-code-pro/SourceCodePro-BoldIt.otf");
         Font::doneLoading();
+        SkyBox::init();
+        Grid::init();
         Renderer::setViewportSize(800, 800);
+        Renderer::enableDepthTesting();
 
-        const float size = 0.2f;
+        const float size = 1.0f;
         float vert[] = {
-                size, -size,
-                -size, -size,
-                0.0f, size,
+                size, 0,
+                -size, 0,
+                0.0f, size * 2,
                 };
 
 
@@ -75,7 +80,7 @@ namespace AirForce {
         VertexBuffer::bufferData(&vert[0] ,sizeof(vert));
 
         vao.bind();
-        VertexArray::vertexAttrib(0, 2, sizeof(float) * 2, (void*)0);
+        VertexArray::vertexAttrib(0, 2, sizeof(float) * 2, nullptr);
     }
 
     void Editor::drawGUI() {
@@ -87,6 +92,46 @@ namespace AirForce {
 
         scene.draw();
 
+        ImGui::Begin("Scene Properties");
+        if(ImGui::TreeNode("Camera")) {
+            ImGui::Text("Speed");
+            ImGui::SameLine();
+            ImGui::InputFloat(" ", &(scene.camera.MovementSpeed));
+            if(ImGui::TreeNode("View Distance")) {
+                ImGui::Text("Minimum");
+                ImGui::SameLine();
+                ImGui::DragFloat("  ", &(scene.camera.MinDistance), 0.1f, 0.1f, FLT_MAX, "%.1f");
+                ImGui::Text("Maximum");
+                ImGui::SameLine();
+                ImGui::DragFloat(" ", &(scene.camera.MaxDistance), 0.1f, 0.1f, FLT_MAX, "%.1f");
+
+                ImGui::TreePop();
+            }
+            ImGui::TreePop();
+        }
+        if(ImGui::TreeNode("Grid")) {
+            ImGui::Text("Size");
+            ImGui::SameLine();
+            ImGui::SliderInt(" ", &(AF_Grid.Size), 0, 1000);
+            ImGui::Text("Color");
+            ImGui::SameLine();
+            ImGui::SliderFloat3("", (float *) &(AF_Grid.Color), 0, 1);
+            ImGui::SameLine();
+            if (ImGui::ColorButton("Grid Color", ImVec4(AF_Grid.Color.x, AF_Grid.Color.y, AF_Grid.Color.z, 1.0f))) {
+                ImGui::OpenPopup("grid-color-edit");
+            }
+
+            if (ImGui::BeginPopup("grid-color-edit")) {
+                ImGui::ColorPicker3("", (float *) &(AF_Grid.Color),
+                                    ImGuiColorEditFlags_PickerHueWheel | ImGuiColorEditFlags_NoSidePreview |
+                                    ImGuiColorEditFlags_NoSmallPreview | ImGuiColorEditFlags_NoInputs);
+                ImGui::EndPopup();
+            }
+            ImGui::TreePop();
+        }
+
+        ImGui::End();
+
         GUI::END();
     }
 
@@ -95,7 +140,6 @@ namespace AirForce {
         ImGui::SetNextWindowPos(viewport->WorkPos);
         ImGui::SetNextWindowSize(viewport->WorkSize);
         ImGui::SetNextWindowViewport(viewport->ID);
-
 
         ImGui::Begin("DockSpace");
         ImGuiIO& io = ImGui::GetIO();

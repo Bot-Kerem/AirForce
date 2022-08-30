@@ -19,13 +19,17 @@ namespace AirForce {
             void start();
             void end();
 
-            bool isFocused();
+            bool isFocused() const;
+            bool isHovered() const;
 
-            glm::mat4 getPerspective();
+            static RenderScene* getCurrentScene();
+
+            glm::mat4 getPerspective() const;
             Camera camera{};
         private:
-
+            static RenderScene* s_CurrentScene;
             bool m_Focus = false;
+            bool m_Hover = false;
             ImVec2 m_RenderSize{0.0f, 0.0f};
             std::unique_ptr<Framebuffer> m_Frame;
     };

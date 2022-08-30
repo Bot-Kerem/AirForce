@@ -52,154 +52,182 @@ build cmake_object_order_depends_target_untitled: phony || CMakeFiles/untitled.d
 build CMakeFiles/untitled.dir/external/glad/source/glad.c.o: C_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/external/glad/source/glad.c || cmake_object_order_depends_target_untitled
   DEP_FILE = CMakeFiles/untitled.dir/external/glad/source/glad.c.o.d
   FLAGS = -g
-  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2 -I/home/kereem/CLionProjects/untitled/external/stb
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/external/glad/source
 
 build CMakeFiles/untitled.dir/source/main.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/source/main.cpp || cmake_object_order_depends_target_untitled
   DEP_FILE = CMakeFiles/untitled.dir/source/main.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2 -I/home/kereem/CLionProjects/untitled/external/stb
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source
 
 build CMakeFiles/untitled.dir/source/Window.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/source/Window.cpp || cmake_object_order_depends_target_untitled
   DEP_FILE = CMakeFiles/untitled.dir/source/Window.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2 -I/home/kereem/CLionProjects/untitled/external/stb
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source
 
 build CMakeFiles/untitled.dir/source/Editor.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/source/Editor.cpp || cmake_object_order_depends_target_untitled
   DEP_FILE = CMakeFiles/untitled.dir/source/Editor.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2 -I/home/kereem/CLionProjects/untitled/external/stb
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source
 
 build CMakeFiles/untitled.dir/source/Renderer/Renderer.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/source/Renderer/Renderer.cpp || cmake_object_order_depends_target_untitled
   DEP_FILE = CMakeFiles/untitled.dir/source/Renderer/Renderer.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2 -I/home/kereem/CLionProjects/untitled/external/stb
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source/Renderer
 
 build CMakeFiles/untitled.dir/source/GUI/Gui.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/source/GUI/Gui.cpp || cmake_object_order_depends_target_untitled
   DEP_FILE = CMakeFiles/untitled.dir/source/GUI/Gui.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2 -I/home/kereem/CLionProjects/untitled/external/stb
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source/GUI
 
 build CMakeFiles/untitled.dir/source/GUI/Text.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/source/GUI/Text.cpp || cmake_object_order_depends_target_untitled
   DEP_FILE = CMakeFiles/untitled.dir/source/GUI/Text.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2 -I/home/kereem/CLionProjects/untitled/external/stb
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source/GUI
 
 build CMakeFiles/untitled.dir/source/File.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/source/File.cpp || cmake_object_order_depends_target_untitled
   DEP_FILE = CMakeFiles/untitled.dir/source/File.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2 -I/home/kereem/CLionProjects/untitled/external/stb
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source
 
 build CMakeFiles/untitled.dir/source/Renderer/Shader.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/source/Renderer/Shader.cpp || cmake_object_order_depends_target_untitled
   DEP_FILE = CMakeFiles/untitled.dir/source/Renderer/Shader.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2 -I/home/kereem/CLionProjects/untitled/external/stb
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source/Renderer
 
 build CMakeFiles/untitled.dir/source/Renderer/Framebuffer.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/source/Renderer/Framebuffer.cpp || cmake_object_order_depends_target_untitled
   DEP_FILE = CMakeFiles/untitled.dir/source/Renderer/Framebuffer.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2 -I/home/kereem/CLionProjects/untitled/external/stb
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source/Renderer
 
 build CMakeFiles/untitled.dir/source/RenderScene.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/source/RenderScene.cpp || cmake_object_order_depends_target_untitled
   DEP_FILE = CMakeFiles/untitled.dir/source/RenderScene.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2 -I/home/kereem/CLionProjects/untitled/external/stb
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source
 
 build CMakeFiles/untitled.dir/source/Renderer/Mesh.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/source/Renderer/Mesh.cpp || cmake_object_order_depends_target_untitled
   DEP_FILE = CMakeFiles/untitled.dir/source/Renderer/Mesh.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2 -I/home/kereem/CLionProjects/untitled/external/stb
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source/Renderer
 
 build CMakeFiles/untitled.dir/source/Renderer/VertexArray.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/source/Renderer/VertexArray.cpp || cmake_object_order_depends_target_untitled
   DEP_FILE = CMakeFiles/untitled.dir/source/Renderer/VertexArray.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2 -I/home/kereem/CLionProjects/untitled/external/stb
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source/Renderer
 
 build CMakeFiles/untitled.dir/source/Renderer/VertexBuffer.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/source/Renderer/VertexBuffer.cpp || cmake_object_order_depends_target_untitled
   DEP_FILE = CMakeFiles/untitled.dir/source/Renderer/VertexBuffer.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2 -I/home/kereem/CLionProjects/untitled/external/stb
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source/Renderer
 
 build CMakeFiles/untitled.dir/source/Utils/Camera.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/source/Utils/Camera.cpp || cmake_object_order_depends_target_untitled
   DEP_FILE = CMakeFiles/untitled.dir/source/Utils/Camera.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2 -I/home/kereem/CLionProjects/untitled/external/stb
+  OBJECT_DIR = CMakeFiles/untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source/Utils
+
+build CMakeFiles/untitled.dir/source/Utils/Controller.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/source/Utils/Controller.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles/untitled.dir/source/Utils/Controller.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2 -I/home/kereem/CLionProjects/untitled/external/stb
+  OBJECT_DIR = CMakeFiles/untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source/Utils
+
+build CMakeFiles/untitled.dir/source/Utils/Clock.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/source/Utils/Clock.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles/untitled.dir/source/Utils/Clock.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2 -I/home/kereem/CLionProjects/untitled/external/stb
+  OBJECT_DIR = CMakeFiles/untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source/Utils
+
+build CMakeFiles/untitled.dir/source/Utils/SkyBox.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/source/Utils/SkyBox.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles/untitled.dir/source/Utils/SkyBox.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2 -I/home/kereem/CLionProjects/untitled/external/stb
+  OBJECT_DIR = CMakeFiles/untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source/Utils
+
+build CMakeFiles/untitled.dir/source/Utils/Grid.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/source/Utils/Grid.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles/untitled.dir/source/Utils/Grid.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2 -I/home/kereem/CLionProjects/untitled/external/stb
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source/Utils
 
 build CMakeFiles/untitled.dir/external/imgui/source/imgui.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/external/imgui/source/imgui.cpp || cmake_object_order_depends_target_untitled
   DEP_FILE = CMakeFiles/untitled.dir/external/imgui/source/imgui.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2 -I/home/kereem/CLionProjects/untitled/external/stb
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/external/imgui/source
 
 build CMakeFiles/untitled.dir/external/imgui/source/imgui_demo.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/external/imgui/source/imgui_demo.cpp || cmake_object_order_depends_target_untitled
   DEP_FILE = CMakeFiles/untitled.dir/external/imgui/source/imgui_demo.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2 -I/home/kereem/CLionProjects/untitled/external/stb
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/external/imgui/source
 
 build CMakeFiles/untitled.dir/external/imgui/source/imgui_draw.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/external/imgui/source/imgui_draw.cpp || cmake_object_order_depends_target_untitled
   DEP_FILE = CMakeFiles/untitled.dir/external/imgui/source/imgui_draw.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2 -I/home/kereem/CLionProjects/untitled/external/stb
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/external/imgui/source
 
 build CMakeFiles/untitled.dir/external/imgui/source/imgui_impl_glfw.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/external/imgui/source/imgui_impl_glfw.cpp || cmake_object_order_depends_target_untitled
   DEP_FILE = CMakeFiles/untitled.dir/external/imgui/source/imgui_impl_glfw.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2 -I/home/kereem/CLionProjects/untitled/external/stb
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/external/imgui/source
 
 build CMakeFiles/untitled.dir/external/imgui/source/imgui_impl_opengl3.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/external/imgui/source/imgui_impl_opengl3.cpp || cmake_object_order_depends_target_untitled
   DEP_FILE = CMakeFiles/untitled.dir/external/imgui/source/imgui_impl_opengl3.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2 -I/home/kereem/CLionProjects/untitled/external/stb
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/external/imgui/source
 
 build CMakeFiles/untitled.dir/external/imgui/source/imgui_tables.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/external/imgui/source/imgui_tables.cpp || cmake_object_order_depends_target_untitled
   DEP_FILE = CMakeFiles/untitled.dir/external/imgui/source/imgui_tables.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2 -I/home/kereem/CLionProjects/untitled/external/stb
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/external/imgui/source
 
 build CMakeFiles/untitled.dir/external/imgui/source/imgui_widgets.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/external/imgui/source/imgui_widgets.cpp || cmake_object_order_depends_target_untitled
   DEP_FILE = CMakeFiles/untitled.dir/external/imgui/source/imgui_widgets.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2 -I/home/kereem/CLionProjects/untitled/external/stb
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/external/imgui/source
 
@@ -211,7 +239,7 @@ build CMakeFiles/untitled.dir/external/imgui/source/imgui_widgets.cpp.o: CXX_COM
 #############################################
 # Link the executable untitled
 
-build untitled: CXX_EXECUTABLE_LINKER__untitled_Debug CMakeFiles/untitled.dir/external/glad/source/glad.c.o CMakeFiles/untitled.dir/source/main.cpp.o CMakeFiles/untitled.dir/source/Window.cpp.o CMakeFiles/untitled.dir/source/Editor.cpp.o CMakeFiles/untitled.dir/source/Renderer/Renderer.cpp.o CMakeFiles/untitled.dir/source/GUI/Gui.cpp.o CMakeFiles/untitled.dir/source/GUI/Text.cpp.o CMakeFiles/untitled.dir/source/File.cpp.o CMakeFiles/untitled.dir/source/Renderer/Shader.cpp.o CMakeFiles/untitled.dir/source/Renderer/Framebuffer.cpp.o CMakeFiles/untitled.dir/source/RenderScene.cpp.o CMakeFiles/untitled.dir/source/Renderer/Mesh.cpp.o CMakeFiles/untitled.dir/source/Renderer/VertexArray.cpp.o CMakeFiles/untitled.dir/source/Renderer/VertexBuffer.cpp.o CMakeFiles/untitled.dir/source/Utils/Camera.cpp.o CMakeFiles/untitled.dir/external/imgui/source/imgui.cpp.o CMakeFiles/untitled.dir/external/imgui/source/imgui_demo.cpp.o CMakeFiles/untitled.dir/external/imgui/source/imgui_draw.cpp.o CMakeFiles/untitled.dir/external/imgui/source/imgui_impl_glfw.cpp.o CMakeFiles/untitled.dir/external/imgui/source/imgui_impl_opengl3.cpp.o CMakeFiles/untitled.dir/external/imgui/source/imgui_tables.cpp.o CMakeFiles/untitled.dir/external/imgui/source/imgui_widgets.cpp.o | /usr/lib/libglfw.so.3.3
+build untitled: CXX_EXECUTABLE_LINKER__untitled_Debug CMakeFiles/untitled.dir/external/glad/source/glad.c.o CMakeFiles/untitled.dir/source/main.cpp.o CMakeFiles/untitled.dir/source/Window.cpp.o CMakeFiles/untitled.dir/source/Editor.cpp.o CMakeFiles/untitled.dir/source/Renderer/Renderer.cpp.o CMakeFiles/untitled.dir/source/GUI/Gui.cpp.o CMakeFiles/untitled.dir/source/GUI/Text.cpp.o CMakeFiles/untitled.dir/source/File.cpp.o CMakeFiles/untitled.dir/source/Renderer/Shader.cpp.o CMakeFiles/untitled.dir/source/Renderer/Framebuffer.cpp.o CMakeFiles/untitled.dir/source/RenderScene.cpp.o CMakeFiles/untitled.dir/source/Renderer/Mesh.cpp.o CMakeFiles/untitled.dir/source/Renderer/VertexArray.cpp.o CMakeFiles/untitled.dir/source/Renderer/VertexBuffer.cpp.o CMakeFiles/untitled.dir/source/Utils/Camera.cpp.o CMakeFiles/untitled.dir/source/Utils/Controller.cpp.o CMakeFiles/untitled.dir/source/Utils/Clock.cpp.o CMakeFiles/untitled.dir/source/Utils/SkyBox.cpp.o CMakeFiles/untitled.dir/source/Utils/Grid.cpp.o CMakeFiles/untitled.dir/external/imgui/source/imgui.cpp.o CMakeFiles/untitled.dir/external/imgui/source/imgui_demo.cpp.o CMakeFiles/untitled.dir/external/imgui/source/imgui_draw.cpp.o CMakeFiles/untitled.dir/external/imgui/source/imgui_impl_glfw.cpp.o CMakeFiles/untitled.dir/external/imgui/source/imgui_impl_opengl3.cpp.o CMakeFiles/untitled.dir/external/imgui/source/imgui_tables.cpp.o CMakeFiles/untitled.dir/external/imgui/source/imgui_widgets.cpp.o | /usr/lib/libglfw.so.3.3
   FLAGS = -g
   LINK_LIBRARIES = /usr/lib/libglfw.so.3.3  -lfreetype
   OBJECT_DIR = CMakeFiles/untitled.dir

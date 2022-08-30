@@ -6,6 +6,8 @@
 #include <glad/glad.h>
 
 namespace AirForce{
+    bool Renderer::DepthTesting = false;
+
     void Renderer::clearColor(float red, float green, float blue, float alpha) {
         glClearColor(red, green, blue, alpha);
     }
@@ -20,6 +22,11 @@ namespace AirForce{
 
     void Renderer::setViewportSize(float width, float height, float offsetWidth, float offsetHeight) {
         glViewport(offsetWidth, offsetHeight, width, height);
+    }
+
+    void Renderer::enableDepthTesting() {
+        glEnable(GL_DEPTH_TEST);
+        DepthTesting = true;
     }
 
 }

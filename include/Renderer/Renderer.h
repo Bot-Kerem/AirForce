@@ -15,9 +15,11 @@ namespace AirForce{
 
             static void setViewportSize(float width, float height, float offsetWidth = 0, float offsetHeight = 0);
             static void clearColor(float red, float green, float blue, float alpha);
+
+            static void enableDepthTesting();
             void clear();
         private:
-            bool DepthTesting = false;
+            static bool DepthTesting;
     };
 }
 

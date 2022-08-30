@@ -5,7 +5,7 @@
 #include "Utils/Camera.h"
 
 
-AirForce::Camera::Camera(glm::vec3 position, glm::vec3 up, float yaw, float pitch):m_Front(glm::vec3(0.0f, 0.0f, -1.0f)), MovementSpeed(SPEED), MouseSensitivity(SENSITIVITY), Zoom(ZOOM) {
+AirForce::Camera::Camera(glm::vec3 position, glm::vec3 up, float yaw, float pitch):m_Front(glm::vec3(0.0f, 0.0f, -1.0f)), MovementSpeed(SPEED), MouseSensitivity(SENSITIVITY), Zoom(ZOOM), MinDistance(MIN_DISTANCE), MaxDistance(MAX_DISTANCE) {
     Position = position;
     m_WorldUp = up;
     m_Yaw = yaw;
@@ -65,3 +65,13 @@ void AirForce::Camera::updateCameraVectors() {
     m_Right = glm::normalize(glm::cross(m_Front, m_WorldUp));
     m_Up    = glm::normalize(glm::cross(m_Right, m_Front));
 }
+
+AirForce::Camera *AirForce::Camera::getActiveCamera() {
+    return s_ActiveCamera;
+}
+
+void AirForce::Camera::setActiveCamera(AirForce::Camera *camera) {
+    s_ActiveCamera = camera;
+}
+
+AirForce::Camera* AirForce::Camera::s_ActiveCamera = nullptr;

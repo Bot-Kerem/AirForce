@@ -31,13 +31,18 @@ set(AF_SOURCES
         source/Renderer/VertexArray.cpp
         source/Renderer/VertexBuffer.cpp
         source/Utils/Camera.cpp
+        source/Utils/Controller.cpp
+        source/Utils/Clock.cpp
+        source/Utils/SkyBox.cpp
+        source/Utils/Grid.cpp
         )
 
 set(IMGUI_INCLUDE external/imgui/include)
 set(GLAD_INCLUDE external/glad/include)
+set(STB_INCLUDE external/stb)
 set(FREETYPE_INCLUDE "/usr/include/freetype2/")
 
-include_directories(include/ ${IMGUI_INCLUDE} ${GLAD_INCLUDE} ${FREETYPE_INCLUDE})
+include_directories(include/ ${IMGUI_INCLUDE} ${GLAD_INCLUDE} ${FREETYPE_INCLUDE} ${STB_INCLUDE})
 
 add_executable(untitled ${AF_SOURCES} ${IMGUI_SOURCES})
 

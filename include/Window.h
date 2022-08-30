@@ -29,8 +29,12 @@ namespace AirForce {
 
             void setUserPointer(void* object);
 
+            void swapInterval(int interval);
+
             static void framebufferSizeCallback(GLFWwindow* window, int width, int height);
             static void keyCallback(GLFWwindow* window, int key, int scancode, int action, int mods);
+            static void cursorCallback(GLFWwindow* window, double InxPos, double InyPos);
+
     private:
             GLFWwindow* m_Window;
 

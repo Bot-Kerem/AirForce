@@ -15,6 +15,9 @@
 
 #include "Renderer/VertexArray.h"
 #include "Renderer/Shader.h"
+#include "Utils/Controller.h"
+#include "Utils/SkyBox.h"
+#include "Utils/Grid.h"
 
 namespace AirForce {
     class Editor {
@@ -23,7 +26,6 @@ namespace AirForce {
             const glm::vec2 renderSize{1920.0f, 1080.0f};
             int WIDTH = 800;
             int HEIGHT = 600;
-
 
             Editor();
 
@@ -37,15 +39,15 @@ namespace AirForce {
             void draw();
 
             RenderScene scene{};
-            float deltaTime{0};
-            float lastTime{0};
         private:
             Window AF_Window{WIDTH, HEIGHT, "AirForce"};
             Renderer AF_Renderer{};
+            Controller AF_Controller{AF_Window.getWindow()};
             Font font{};
-
             VertexArray vao;
             Shader shader{"./../shaders/cubemap.vs", "./../shaders/cubemap.fs"};
+            SkyBox AF_SkyBox{"./../skybox/night"};
+            Grid AF_Grid{100};
     };
 } // AirForce
 
