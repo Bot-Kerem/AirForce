@@ -43,8 +43,22 @@ namespace AirForce {
         shader.use();
         shader.setMat4("view", &view);
         shader.setMat4("proj", &perspective);
-        vao.bind();
-        glDrawArrays(GL_TRIANGLES, 0, 3);
+        shader.setVec3("albedo", material.albedo);
+        shader.setVec3("lightPosition", light.position);
+        shader.setVec3("lightColor", light.color);
+        shader.setVec3("camPos", scene.camera.Position);
+        shader.setFloat("metallic", material.metallic);
+        shader.setFloat("roughness", material.roughness);
+        shader.setFloat("ao", material.ao);
+        AF_Sphere.draw();
+
+        lShader.use();
+        lShader.setMat4("view", &view);
+        lShader.setMat4("proj", &perspective);
+        lShader.setVec3("pos", light.position);
+        lShader.setVec3("color", light.color);
+        AF_Sphere.draw();
+
         AF_SkyBox.draw();
 
         Font::start();
@@ -66,21 +80,6 @@ namespace AirForce {
         Grid::init();
         Renderer::setViewportSize(800, 800);
         Renderer::enableDepthTesting();
-
-        const float size = 1.0f;
-        float vert[] = {
-                size, 0,
-                -size, 0,
-                0.0f, size * 2,
-                };
-
-
-        VertexBuffer vbo;
-        vbo.bind();
-        VertexBuffer::bufferData(&vert[0] ,sizeof(vert));
-
-        vao.bind();
-        VertexArray::vertexAttrib(0, 2, sizeof(float) * 2, nullptr);
     }
 
     void Editor::drawGUI() {
@@ -91,6 +90,56 @@ namespace AirForce {
         ImGui::ShowDemoWindow();
 
         scene.draw();
+
+        ImGui::Begin("Object Properties");
+        if(ImGui::TreeNode("Material")) {
+            ImGui::Text("Albedo");
+            ImGui::SameLine();
+            ImGui::SliderFloat3("", (float *) &(material.albedo), 0, 1);
+            ImGui::SameLine();
+            if (ImGui::ColorButton("Material Albedo", ImVec4(material.albedo.x, material.albedo.y, material.albedo.z, 1.0f))) {
+                ImGui::OpenPopup("material-color-edit");
+            }
+
+            if (ImGui::BeginPopup("material-color-edit")) {
+                ImGui::ColorPicker3("", (float *) &(material.albedo),
+                                    ImGuiColorEditFlags_PickerHueWheel | ImGuiColorEditFlags_NoSidePreview |
+                                    ImGuiColorEditFlags_NoSmallPreview | ImGuiColorEditFlags_NoInputs);
+                ImGui::EndPopup();
+            }
+            ImGui::Text("Metallic");
+            ImGui::SameLine();
+            ImGui::DragFloat("  ", &(material.metallic), 0.001f, 0.0f, 1.0f, "%.1f");
+            ImGui::Text("Roughness");
+            ImGui::SameLine();
+            ImGui::DragFloat("   ", &(material.roughness), 0.001f, 0.0f, 1.0f, "%.1f");
+            ImGui::Text("AO");
+            ImGui::SameLine();
+            ImGui::DragFloat("    ", &(material.ao), 0.001f, -1.0f, 1.0f, "%.1f");
+            ImGui::TreePop();
+        }
+        if(ImGui::TreeNode("Light")) {
+            ImGui::Text("Position");
+            ImGui::SameLine();
+            ImGui::SliderFloat3(" ", (float *) &(light.position), -10, 10);
+            ImGui::Text("Color");
+            ImGui::SameLine();
+            ImGui::SliderFloat3("", (float *) &(light.color), 0, 1);
+            ImGui::SameLine();
+            if (ImGui::ColorButton("Light Color", ImVec4(light.color.x, light.color.y, light.color.z, 1.0f))) {
+                ImGui::OpenPopup("light-color-edit");
+            }
+
+            if (ImGui::BeginPopup("light-color-edit")) {
+                ImGui::ColorPicker3("", (float *) &(light.color),
+                                    ImGuiColorEditFlags_PickerHueWheel | ImGuiColorEditFlags_NoSidePreview |
+                                    ImGuiColorEditFlags_NoSmallPreview | ImGuiColorEditFlags_NoInputs);
+                ImGui::EndPopup();
+            }
+            ImGui::TreePop();
+        }
+
+        ImGui::End();
 
         ImGui::Begin("Scene Properties");
         if(ImGui::TreeNode("Camera")) {

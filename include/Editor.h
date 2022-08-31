@@ -13,11 +13,23 @@
 #include "RenderScene.h"
 #include <memory>
 
-#include "Renderer/VertexArray.h"
+#include "Graphics/Sphere.h"
 #include "Renderer/Shader.h"
 #include "Utils/Controller.h"
 #include "Utils/SkyBox.h"
 #include "Utils/Grid.h"
+
+struct Material {
+    glm::vec3 albedo{0};
+    float metallic{0};
+    float roughness{1};
+    float ao{1};
+};
+
+struct Light {
+    glm::vec3 position{0};
+    glm::vec3 color{0};
+};
 
 namespace AirForce {
     class Editor {
@@ -44,10 +56,15 @@ namespace AirForce {
             Renderer AF_Renderer{};
             Controller AF_Controller{AF_Window.getWindow()};
             Font font{};
-            VertexArray vao;
+            Sphere AF_Sphere{32, 32};
             Shader shader{"./../shaders/cubemap.vs", "./../shaders/cubemap.fs"};
+            Shader lShader{"./../shaders/light.vs", "./../shaders/light.fs"};
             SkyBox AF_SkyBox{"./../skybox/night"};
             Grid AF_Grid{100};
+            Material material{};
+            Light light{};
+
+
     };
 } // AirForce
 

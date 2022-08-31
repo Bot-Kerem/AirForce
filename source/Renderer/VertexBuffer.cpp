@@ -16,7 +16,7 @@ namespace AirForce {
         //glDeleteBuffers(1, &m_VertexBuffer);
     }
 
-    void VertexBuffer::bind() {
+    void VertexBuffer::bind() const {
         glBindBuffer(GL_ARRAY_BUFFER, m_VertexBuffer);
     }
 
@@ -24,7 +24,7 @@ namespace AirForce {
         glBindBuffer(GL_ARRAY_BUFFER, 0);
     }
 
-    void VertexBuffer::bufferData(void *data, signed long int size) {
+    void VertexBuffer::bufferData(void *data, int size) {
         glBufferData(GL_ARRAY_BUFFER, size, data, GL_STATIC_DRAW);
     }
 } // AirForce

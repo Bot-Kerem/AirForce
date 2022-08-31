@@ -14,10 +14,10 @@ namespace AirForce {
             VertexBuffer(const VertexBuffer &) = delete;
             VertexBuffer& operator=(const VertexBuffer &) = delete;
 
-            void bind();
+            void bind() const;
             static void unbind();
 
-            static void bufferData(void* data, signed long int size) ;
+            static void bufferData(void* data, int size) ;
         private:
             unsigned int m_VertexBuffer{};
     };

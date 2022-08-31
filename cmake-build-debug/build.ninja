@@ -182,6 +182,20 @@ build CMakeFiles/untitled.dir/source/Utils/Grid.cpp.o: CXX_COMPILER__untitled_De
   OBJECT_DIR = CMakeFiles/untitled.dir
   OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source/Utils
 
+build CMakeFiles/untitled.dir/source/Graphics/Sphere.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/source/Graphics/Sphere.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles/untitled.dir/source/Graphics/Sphere.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2 -I/home/kereem/CLionProjects/untitled/external/stb
+  OBJECT_DIR = CMakeFiles/untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source/Graphics
+
+build CMakeFiles/untitled.dir/source/Renderer/ElementArray.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/source/Renderer/ElementArray.cpp || cmake_object_order_depends_target_untitled
+  DEP_FILE = CMakeFiles/untitled.dir/source/Renderer/ElementArray.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/kereem/CLionProjects/untitled/include -I/home/kereem/CLionProjects/untitled/external/imgui/include -I/home/kereem/CLionProjects/untitled/external/glad/include -I/usr/include/freetype2 -I/home/kereem/CLionProjects/untitled/external/stb
+  OBJECT_DIR = CMakeFiles/untitled.dir
+  OBJECT_FILE_DIR = CMakeFiles/untitled.dir/source/Renderer
+
 build CMakeFiles/untitled.dir/external/imgui/source/imgui.cpp.o: CXX_COMPILER__untitled_Debug /home/kereem/CLionProjects/untitled/external/imgui/source/imgui.cpp || cmake_object_order_depends_target_untitled
   DEP_FILE = CMakeFiles/untitled.dir/external/imgui/source/imgui.cpp.o.d
   FLAGS = -g
@@ -239,7 +253,7 @@ build CMakeFiles/untitled.dir/external/imgui/source/imgui_widgets.cpp.o: CXX_COM
 #############################################
 # Link the executable untitled
 
-build untitled: CXX_EXECUTABLE_LINKER__untitled_Debug CMakeFiles/untitled.dir/external/glad/source/glad.c.o CMakeFiles/untitled.dir/source/main.cpp.o CMakeFiles/untitled.dir/source/Window.cpp.o CMakeFiles/untitled.dir/source/Editor.cpp.o CMakeFiles/untitled.dir/source/Renderer/Renderer.cpp.o CMakeFiles/untitled.dir/source/GUI/Gui.cpp.o CMakeFiles/untitled.dir/source/GUI/Text.cpp.o CMakeFiles/untitled.dir/source/File.cpp.o CMakeFiles/untitled.dir/source/Renderer/Shader.cpp.o CMakeFiles/untitled.dir/source/Renderer/Framebuffer.cpp.o CMakeFiles/untitled.dir/source/RenderScene.cpp.o CMakeFiles/untitled.dir/source/Renderer/Mesh.cpp.o CMakeFiles/untitled.dir/source/Renderer/VertexArray.cpp.o CMakeFiles/untitled.dir/source/Renderer/VertexBuffer.cpp.o CMakeFiles/untitled.dir/source/Utils/Camera.cpp.o CMakeFiles/untitled.dir/source/Utils/Controller.cpp.o CMakeFiles/untitled.dir/source/Utils/Clock.cpp.o CMakeFiles/untitled.dir/source/Utils/SkyBox.cpp.o CMakeFiles/untitled.dir/source/Utils/Grid.cpp.o CMakeFiles/untitled.dir/external/imgui/source/imgui.cpp.o CMakeFiles/untitled.dir/external/imgui/source/imgui_demo.cpp.o CMakeFiles/untitled.dir/external/imgui/source/imgui_draw.cpp.o CMakeFiles/untitled.dir/external/imgui/source/imgui_impl_glfw.cpp.o CMakeFiles/untitled.dir/external/imgui/source/imgui_impl_opengl3.cpp.o CMakeFiles/untitled.dir/external/imgui/source/imgui_tables.cpp.o CMakeFiles/untitled.dir/external/imgui/source/imgui_widgets.cpp.o | /usr/lib/libglfw.so.3.3
+build untitled: CXX_EXECUTABLE_LINKER__untitled_Debug CMakeFiles/untitled.dir/external/glad/source/glad.c.o CMakeFiles/untitled.dir/source/main.cpp.o CMakeFiles/untitled.dir/source/Window.cpp.o CMakeFiles/untitled.dir/source/Editor.cpp.o CMakeFiles/untitled.dir/source/Renderer/Renderer.cpp.o CMakeFiles/untitled.dir/source/GUI/Gui.cpp.o CMakeFiles/untitled.dir/source/GUI/Text.cpp.o CMakeFiles/untitled.dir/source/File.cpp.o CMakeFiles/untitled.dir/source/Renderer/Shader.cpp.o CMakeFiles/untitled.dir/source/Renderer/Framebuffer.cpp.o CMakeFiles/untitled.dir/source/RenderScene.cpp.o CMakeFiles/untitled.dir/source/Renderer/Mesh.cpp.o CMakeFiles/untitled.dir/source/Renderer/VertexArray.cpp.o CMakeFiles/untitled.dir/source/Renderer/VertexBuffer.cpp.o CMakeFiles/untitled.dir/source/Utils/Camera.cpp.o CMakeFiles/untitled.dir/source/Utils/Controller.cpp.o CMakeFiles/untitled.dir/source/Utils/Clock.cpp.o CMakeFiles/untitled.dir/source/Utils/SkyBox.cpp.o CMakeFiles/untitled.dir/source/Utils/Grid.cpp.o CMakeFiles/untitled.dir/source/Graphics/Sphere.cpp.o CMakeFiles/untitled.dir/source/Renderer/ElementArray.cpp.o CMakeFiles/untitled.dir/external/imgui/source/imgui.cpp.o CMakeFiles/untitled.dir/external/imgui/source/imgui_demo.cpp.o CMakeFiles/untitled.dir/external/imgui/source/imgui_draw.cpp.o CMakeFiles/untitled.dir/external/imgui/source/imgui_impl_glfw.cpp.o CMakeFiles/untitled.dir/external/imgui/source/imgui_impl_opengl3.cpp.o CMakeFiles/untitled.dir/external/imgui/source/imgui_tables.cpp.o CMakeFiles/untitled.dir/external/imgui/source/imgui_widgets.cpp.o | /usr/lib/libglfw.so.3.3
   FLAGS = -g
   LINK_LIBRARIES = /usr/lib/libglfw.so.3.3  -lfreetype
   OBJECT_DIR = CMakeFiles/untitled.dir

@@ -7,6 +7,7 @@
 
 #include "Renderer/VertexArray.h"
 #include "Renderer/VertexBuffer.h"
+#include "Renderer/ElementArray.h"
 
 namespace AirForce {
 
@@ -18,6 +19,7 @@ namespace AirForce {
         protected:
             VertexArray m_VertexArray;
             VertexBuffer m_VertexBuffer;
+            ElementArray m_ElementBuffer;
     };
 
 } // AirForce

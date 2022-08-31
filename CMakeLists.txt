@@ -35,7 +35,7 @@ set(AF_SOURCES
         source/Utils/Clock.cpp
         source/Utils/SkyBox.cpp
         source/Utils/Grid.cpp
-        )
+        source/Graphics/Sphere.cpp include/Graphics/Sphere.h source/Renderer/ElementArray.cpp include/Renderer/ElementArray.h)
 
 set(IMGUI_INCLUDE external/imgui/include)
 set(GLAD_INCLUDE external/glad/include)
